@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+}
+/*acima algumas config gerais - abaixo começo a estilizar cabeçalho*/
+
+header {
+  width: 100%;
+  background-position: center;
+  background: rgb(36,22,0);
+  background: linear-gradient(90deg, rgba(36,22,0,1) 0%, rgba(235,121,11,1) 100%, rgba(121,70,9,1) 100%);
+}
+
+/*na section vou definir um max width que poderá ser reutilizado em outras seções*/
+
+.section-box-margin {
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+/*ate aqui tudo indo bem, seguimos agora a estilização da navbar e seus componentes*/
+
+.header-navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  width: 100px;
+  background-color: antiquewhite ;
+}
+
+.header-lista {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.header-lista a {
+  color: antiquewhite;
+  font-size: 20px;
+  text-decoration: none;
+}
+
