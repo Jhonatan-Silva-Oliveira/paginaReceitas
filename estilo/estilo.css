@@ -10,7 +10,14 @@
 
 body {
   height: 100vh;
-  font-family: 'Roboto', sans-serif;;
+  font-family: 'Roboto', sans-serif;
+  background-color: antiquewhite;
+}
+
+.separacao-secao {
+  height: 30px;
+  background: rgb(36,22,0);
+  background: linear-gradient(90deg, rgba(36,22,0,1) 0%, rgba(235,121,11,1) 100%, rgba(121,70,9,1) 100%);
 }
 /*acima algumas config gerais - abaixo começo a estilizar cabeçalho*/
 /*o header definido com esse estilo ficou bom vamos manter por enquanto*/
@@ -22,7 +29,7 @@ header {
   background: linear-gradient(90deg, rgba(36,22,0,1) 0%, rgba(235,121,11,1) 100%, rgba(121,70,9,1) 100%);
 }
 
-/*com relação a parte principal ainda falta definir um background*/
+/*estilo conteúdo inicial e de apresentação*/
 main {
   width: 100%;
   background-image: url(https://images.unsplash.com/photo-1588854337221-4cf9fa96059c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8a2l0Y2hlbiUyMGRlc2lnbnxlbnwwfHwwfHw%3D&w=1000&q=80);
@@ -47,7 +54,7 @@ main {
 /*logo do cabeçalho "ainda pode sofrer alterações"*/
 .header-logo {
   width: 100px;
-  background-color: antiquewhite ;
+  background-color: antiquewhite;
 }
 /*lista com links*/
 .header-lista {
@@ -73,12 +80,12 @@ main {
 }
 /*estilo do texto (titulo) lado a imagem*/
 .main-layout-inicial h1 {
-  font-size: 2em;
+  font-size: 2.4em;
   font-family: 'Great Vibes', cursive;
 }
 /*estilo da imagem principal*/
 .main-layout-inicial img {
-  width: 350px;
+  width: 360px;
   background-color: transparent;
 }
 
@@ -96,11 +103,11 @@ main {
 }
 
 .main-apresentacao {
-  padding: 22px 5px;
+  padding: 30px 5px;
 }
 
 .main-apresentacao h2 {
-  font-size: 1.8em;
+  font-size: 1.9em;
   font-weight: 300;
   font-family: 'Great Vibes', cursive;
   color: antiquewhite;
@@ -114,4 +121,92 @@ main {
   color: antiquewhite;
   font-size: 20px;
   padding-bottom: 15px;
+}
+/*acima a parte de apresentação do site - abaixo receitas*/
+/*estilo do titulo seção receitas*/
+.section-receitas-inverno {
+  margin: 150px 0;
+}
+
+.section-titulo-receitas h2 {
+  font-size: 1.9em;
+  font-weight: 300;
+  font-family: 'Great Vibes', cursive;
+  color: rgb(95, 2, 2);
+  padding: 5px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid rgba(235,121,11,1);
+  border-left: 4px solid rgba(235,121,11,1);
+}
+/*estilo geral dos card-receitas*/
+.card {
+  z-index: -1;
+  position: relative;
+  width: 300px;
+  height:500px;
+  margin: 25px;
+  background-color: antiquewhite;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.7);
+}
+/*estilo do cabeçalho dos card-receita*/
+.card-header {
+  box-sizing: border-box;
+  width: 100%;
+  position: absolute;
+  padding: 10px;
+  background-color: rgb(0, 0, 0, 0.5);
+  color: white;
+}
+
+/*estilo do local imagem principal da receita*/
+.card-main {
+  width: 100%;
+  height: 300px;
+}
+/*estilo da imagem principal da receita*/
+.card-main img {
+  min-width: 100%;
+  width: auto;
+  height: 100%;
+}
+
+/*estilo da section produtos uteis*/
+.card-section {
+  box-sizing: border-box;
+  width: 100%;
+  height: 130px;
+  padding: 10px;
+}
+
+.card-section h4 {
+  color:rgb(95, 2, 2);
+  padding: 5px 0;
+}
+
+/*estilo do footer*/
+.card-footer {
+  height: 70px;
+  background-color: rgb(95, 2, 2);
+  color: white;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.card-footer ul {
+  padding: 5px 0;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-footer ul li {
+  list-style: none;
+}
+
+.card-footer h3 {
+  text-align: center;
+  padding-top: 10px;
 }
