@@ -139,13 +139,21 @@ main {
   border-bottom: 2px solid rgba(235,121,11,1);
   border-left: 4px solid rgba(235,121,11,1);
 }
+
+/*estilo do container dos card receitas*/
+.section-card-receitas {
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px 10px;
+}
+
 /*estilo geral dos card-receitas*/
 .card {
   z-index: -1;
   position: relative;
-  width: 300px;
+  width: 320px;
   height:500px;
-  margin: 25px;
   background-color: antiquewhite;
   border-radius: 20px;
   overflow: hidden;
@@ -188,6 +196,7 @@ main {
 
 /*estilo do footer*/
 .card-footer {
+  box-sizing: border-box;
   height: 70px;
   background-color: rgb(95, 2, 2);
   color: white;
