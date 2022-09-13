@@ -1,3 +1,8 @@
+/*Importei algumas fontes para o testo do site*/
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Great+Vibes&family=Roboto:wght@300&display=swap');
+/*Fim import*/
+
+/*estilos gerais*/
 * {
   margin: 0;
   padding: 0;
@@ -5,21 +10,30 @@
 
 body {
   height: 100vh;
+  font-family: 'Roboto', sans-serif;;
 }
 /*acima algumas config gerais - abaixo começo a estilizar cabeçalho*/
-
+/*o header definido com esse estilo ficou bom vamos manter por enquanto*/
 header {
+  position: fixed;
   width: 100%;
   background-position: center;
   background: rgb(36,22,0);
   background: linear-gradient(90deg, rgba(36,22,0,1) 0%, rgba(235,121,11,1) 100%, rgba(121,70,9,1) 100%);
 }
 
-/*na section vou definir um max width que poderá ser reutilizado em outras seções*/
+/*com relação a parte principal ainda falta definir um background*/
+main {
+  width: 100%;
+  background-image: url(https://images.unsplash.com/photo-1588854337221-4cf9fa96059c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8a2l0Y2hlbiUyMGRlc2lnbnxlbnwwfHwwfHw%3D&w=1000&q=80);
+  background-size: cover;
+  background-position: center;
+}
 
+/*na section vou definir um max width que poderá ser reutilizado em outras seções*/
 .section-box-margin {
   margin: 0 auto;
-  max-width: 1024px;
+  max-width: 1050px;
 }
 
 /*ate aqui tudo indo bem, seguimos agora a estilização da navbar e seus componentes*/
@@ -30,24 +44,74 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-
+/*logo do cabeçalho "ainda pode sofrer alterações"*/
 .header-logo {
   width: 100px;
   background-color: antiquewhite ;
 }
-
+/*lista com links*/
 .header-lista {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 30px;
 }
-
+/*lins do cabeçalho*/
 .header-lista a {
   color: antiquewhite;
-  font-size: 20px;
+  font-size: 18px;
   text-decoration: none;
 }
-
 /*a estilização do cabeçalho termina aqui*/
 
+/*Irei começar a parte do corpo principal da pagina*/
+.main-layout-inicial {
+  display: flex;
+  height: 750px;
+  justify-content: center;
+  align-items: center;
+}
+/*estilo do texto (titulo) lado a imagem*/
+.main-layout-inicial h1 {
+  font-size: 2em;
+  font-family: 'Great Vibes', cursive;
+}
+/*estilo da imagem principal*/
+.main-layout-inicial img {
+  width: 350px;
+  background-color: transparent;
+}
+
+/*acima parte do layout inicial - abaixo apresentação*/
+/*essa parte fara parte do corpo principal da pagina o que é apresentado assim que aberta a pagina*/
+
+/*mascara na parte main*/
+.main-mask-white {
+  background-color: rgb(250, 250, 250, 0.5);
+}
+
+/*mascara na parte conteúdo main*/
+.main-mask-brack {
+  background-color: rgb(0, 0, 0, 0.5);
+}
+
+.main-apresentacao {
+  padding: 22px 5px;
+}
+
+.main-apresentacao h2 {
+  font-size: 1.8em;
+  font-weight: 300;
+  font-family: 'Great Vibes', cursive;
+  color: antiquewhite;
+  padding: 5px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid rgba(235,121,11,1);
+  border-left: 4px solid rgba(235,121,11,1);
+}
+
+.main-apresentacao p {
+  color: antiquewhite;
+  font-size: 20px;
+  padding-bottom: 15px;
+}
