@@ -43,7 +43,7 @@ main {
   max-width: 1050px;
 }
 
-/*ate aqui tudo indo bem, seguimos agora a estilização da navbar e seus componentes*/
+/*seguimos agora a estilização da navbar e seus componentes*/
 
 .header-navbar {
   width: 100%;
@@ -124,7 +124,7 @@ main {
 }
 /*acima a parte de apresentação do site - abaixo receitas*/
 /*estilo do titulo seção receitas*/
-.section-receitas-inverno {
+.section-receitas {
   margin: 150px 0;
 }
 
