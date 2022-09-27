@@ -37,6 +37,14 @@ main {
   background-position: center;
 }
 
+/*footer criado nessa parte*/
+footer {
+  width: 100%;
+  background-position: center;
+  background: rgb(36,22,0);
+  background: linear-gradient(90deg, rgba(36,22,0,1) 0%, rgba(235,121,11,1) 100%, rgba(121,70,9,1) 100%);
+}
+
 /*na section vou definir um max width que poderá ser reutilizado em outras seções*/
 .section-box-margin {
   margin: 0 auto;
@@ -45,7 +53,7 @@ main {
 
 /*seguimos agora a estilização da navbar e seus componentes*/
 
-.header-navbar {
+.header-navbar, .footer-navbar {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -218,4 +226,31 @@ main {
 .card-footer h3 {
   text-align: center;
   padding-top: 10px;
+}
+
+/*estilizando componentes do footer */
+
+footer nav {
+  padding: 20px;
+}
+
+footer nav ul {
+  list-style: none;
+}
+
+footer nav ul li {
+  margin-bottom: 5px;
+}
+
+footer nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+footer p {
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  padding-bottom: 15px;
 }
